@@ -1,0 +1,35 @@
+.icon {
+  font-size: 25px;
+  color: gray;
+}
+
+.mr-3.header_icon {
+  text-align: center;
+  padding-left: 20px;
+}
+
+small.text {
+  color: gray;
+}
+
+.mr-3.header_icon a {
+  text-decoration: none;
+}
+
+.notify__badge__none {
+  display: none;
+}
+
+span.notify__badge {
+  position: absolute;
+  top: -12px;
+  right: 13px;
+  display: inline-block;
+  color: #fff;
+  background: #fa3434;
+  min-width: 18px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+}

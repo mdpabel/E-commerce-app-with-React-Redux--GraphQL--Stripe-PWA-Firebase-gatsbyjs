@@ -1,0 +1,20 @@
+.sign__In {
+  margin: auto;
+  width: 600px;
+}
+
+.facebook__btn,
+.facebook__btn:hover {
+  background: #405d9d;
+  color: #fff;
+  padding: 8px 0;
+  margin: 5px 0 10px 0;
+}
+
+.google__btn,
+.google__btn:hover {
+  background: #af0000;
+  color: #fff;
+  padding: 8px 0;
+  margin: 5px 0 10px 0;
+}

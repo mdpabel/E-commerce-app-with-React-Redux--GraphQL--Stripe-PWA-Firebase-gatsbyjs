@@ -1,0 +1,21 @@
+.checkout__wrapper {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.checkout__total__amount {
+  font-size: 40px;
+  font-weight: bold;
+  color: #828080;
+  font-family: inherit;
+  text-align: center;
+}
+
+button.checkout__button {
+  background: #ff5602;
+  color: #fff;
+}
+
+button.checkout__button:hover {
+  color: #fff;
+}

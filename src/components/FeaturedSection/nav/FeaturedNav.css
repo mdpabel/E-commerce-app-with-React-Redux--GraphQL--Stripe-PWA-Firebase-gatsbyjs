@@ -1,0 +1,24 @@
+.nav-link {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: block;
+}
+
+li.nav-item a {
+  transition: all 0.3s linear;
+}
+
+li.nav-item a:hover {
+  color: #ff5500;
+}

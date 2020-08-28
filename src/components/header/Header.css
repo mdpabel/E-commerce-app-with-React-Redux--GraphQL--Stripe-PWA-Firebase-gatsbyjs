@@ -1,0 +1,14 @@
+.Logo {
+  max-height: 36px;
+  display: inline-block;
+}
+
+.header_icons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 14px 0;
+}

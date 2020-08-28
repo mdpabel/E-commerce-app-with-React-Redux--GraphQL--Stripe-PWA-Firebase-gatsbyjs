@@ -1,0 +1,11 @@
+h6.popular_category_header {
+  background: #12225b;
+  color: #fff;
+  padding: 9px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h6.navbar-brand {
+  font-weight: 700;
+}

@@ -1,0 +1,16 @@
+td.checkout__quantity,
+td.checkout__total,
+td.checkout__remove__item {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+span.decrease__item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+span.increase__item {
+  margin-left: 10px;
+  cursor: pointer;
+}

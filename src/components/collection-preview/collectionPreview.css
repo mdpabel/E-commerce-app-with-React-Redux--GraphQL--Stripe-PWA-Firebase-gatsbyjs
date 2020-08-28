@@ -1,0 +1,24 @@
+.heading__line {
+  position: relative;
+}
+
+/* .heading__line:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  border: 3px solid #cec8c8;
+  width: 100%;
+  transform: translateY(-50%);
+  left: auto;
+  overflow: hidden;
+} */
+
+.collection__preview__title {
+  margin: 20px 0;
+}
+
+a.section__Preview_anchor {
+  text-decoration: none;
+  color: #464444;
+}
