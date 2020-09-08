@@ -22,22 +22,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="main_nav">
           <ul className="navbar-nav text-dark">
             <li className="nav-item">
-              <NavLink className="nav-link" to="shop">
+              <NavLink className="nav-link" to="/shop">
                 Shop
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="sell_with_us">
+              <NavLink className="nav-link" to="/sell_with_us">
                 Sell with us
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="about_alistyle">
+              <NavLink className="nav-link" to="/about_alistyle">
                 About alistyle
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="contact_us">
+              <NavLink className="nav-link" to="/contact_us">
                 Contact us
               </NavLink>
             </li>

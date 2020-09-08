@@ -33,12 +33,14 @@ const CheckOutItem = ({
       </td>
 
       <td className="checkout__quantity">
-        <span className="decrease__item">
-          <FaPlus onClick={() => onIncrementItem(item)} />
-        </span>
-        {quantity}
-        <span className="increase__item">
+        <span className="increase__item mx-2 ">
           <FaMinus onClick={() => onDecrementItem(item)} />
+        </span>
+
+        {quantity}
+
+        <span className="decrease__item mx-2">
+          <FaPlus onClick={() => onIncrementItem(item)} />
         </span>
       </td>
       <td className="checkout__total">${price}</td>

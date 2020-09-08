@@ -54,3 +54,7 @@
 .checkout__button {
   margin-top: auto;
 }
+
+.cursor__disabled {
+  cursor: not-allowed;
+}

@@ -10,7 +10,7 @@ import Search from "./search/Search";
 import "./Header.css";
 import { auth } from "../../components/firebase/firebase.utils";
 import CartDropDown from "../cart-drop-drown/CartDropDown";
-import { toogleCart } from "../../redux/cart/cart.action";
+import { toggleCart } from "../../redux/cart/cart.action";
 import { selectUser } from "../../redux/user/user.select";
 import { selectCartToggle } from "../../redux/cart/cart.select";
 
@@ -38,7 +38,6 @@ const Header = (props) => {
               />
 
               <Icon to="/orders" icon={<FaStore />} text="Orders" />
-
               <Icon
                 to="/sign_in"
                 icon={<FaUserAlt />}
@@ -66,7 +65,7 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchTopProps = (dispatch) => {
   return {
-    onToggleHandler: () => dispatch(toogleCart()),
+    onToggleHandler: () => dispatch(toggleCart()),
   };
 };
 

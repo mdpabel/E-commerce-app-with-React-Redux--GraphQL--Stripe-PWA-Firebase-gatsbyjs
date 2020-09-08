@@ -10,7 +10,7 @@ import {
   selectCartItems,
   selectTotalCartItem,
 } from "../../redux/cart/cart.select";
-import { toogleCart } from "../../redux/cart/cart.action";
+import { toggleCart } from "../../redux/cart/cart.action";
 import { selectTotalAmount } from "../../redux/cart/cart.select";
 
 const CartDropDown = ({
@@ -56,7 +56,11 @@ const CartDropDown = ({
               title="Add item to cart"
               disabled={cartItems.length ? false : true}
               onClick={handleCheckout}
-              className="btn drop__down__btn btn-block"
+              className={
+                cartItems.length
+                  ? "btn drop__down__btn btn-block"
+                  : "btn drop__down__btn btn-block cursor__disabled"
+              }
             >
               Checkout
             </button>
@@ -75,7 +79,7 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    cartToggle: () => dispatch(toogleCart()),
+    cartToggle: () => dispatch(toggleCart()),
   };
 };
 

@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import SHOP_DATA from "../../../resources/shop_data/shop.data";
 import "./FeaturedNav.css";
+import selectSection from "../../../redux/directory/directory.select";
 
-const FeaturedNav = () => {
+const FeaturedNav = ({ section }) => {
   return (
     <aside>
       <nav className="navbar navbar-expand-lg navbar-light flex-column">
-        <h6 className="navbar-brand" to="/">
-          MY MARKETS
-        </h6>
+        <h6 className="navbar-brand">MY MARKETS</h6>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,12 +24,9 @@ const FeaturedNav = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav">
-            {SHOP_DATA.map((shopCategory, id) => (
+            {section.map((shopCategory, id) => (
               <li key={id} className="nav-item  border-bottom">
-                <NavLink
-                  className="nav-link active"
-                  to={shopCategory.routeName}
-                >
+                <NavLink className="nav-link active" to={shopCategory.linkUrl}>
                   <div>{shopCategory.title} category</div>
                 </NavLink>
               </li>
@@ -41,4 +38,8 @@ const FeaturedNav = () => {
   );
 };
 
-export default FeaturedNav;
+const mapStateToProps = createStructuredSelector({
+  section: selectSection,
+});
+
+export default connect(mapStateToProps)(FeaturedNav);

@@ -25,6 +25,7 @@ span.product_price {
 
 .card.product {
   transition: all 0.5s linear;
+  overflow: hidden !important;
 }
 
 .card.product:hover {
@@ -37,4 +38,5 @@ a.card-img-top.product_img {
 
 img.card-img-top.product_img {
   max-height: 230px !important;
+  width: 260px;
 }

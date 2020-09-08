@@ -1,12 +1,14 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import { createStructuredSelector } from "reselect";
+import { connect } from "react-redux";
 
-import SHOP_DATA from "../../../resources/shop_data/shop.data";
 import "./search.css";
+import { selectShopDataForCollections } from "../../../redux/shop/shop.select";
 
-const Search = () => {
+const Search = ({ shopData }) => {
   const getCategory = ["All category"];
-  SHOP_DATA.map((item) => getCategory.push(item.title));
+  shopData.map((item) => getCategory.push(item.title));
 
   return (
     <form className="search-header">
@@ -34,4 +36,8 @@ const Search = () => {
   );
 };
 
-export default Search;
+const mapStateToProps = createStructuredSelector({
+  shopData: selectShopDataForCollections,
+});
+
+export default connect(mapStateToProps)(Search);
